@@ -1,0 +1,43 @@
+<!-- tracker.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <span class="logo">💸 Expense Tracker</span>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="tracker.html" class="nav-link">Tracker</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container glass">
+      <h1><span class="highlight">Expense Tracker</span></h1>
+      <form id="expense-form">
+        <input type="text" id="title" placeholder="Expense title" required />
+        <input type="number" id="amount" placeholder="Amount" required />
+        <button type="submit" class="btn btn-primary">Add Expense</button>
+      </form>
+      <h2>Expenses</h2>
+      <ul id="expense-list"></ul>
+      <button id="save-expenses-btn" class="btn btn-primary" aria-label="Save all expenses" style="display: flex; align-items: center; gap: 8px; margin: 0 auto 12px auto;">
+        <span style="font-size: 1.2em;">💾</span> Save Expenses
+      </button>
+      <div id="save-feedback" style="display:none; color: #007bff; text-align: center; font-weight: 600; margin-bottom: 12px;"></div>
+      <h3>Total: Rs. <span id="total">0</span></h3>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <span>&copy; 2024 Expense Tracker. All rights reserved.</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
